@@ -25,11 +25,11 @@ function NavLink({ title, isLink, hasBropdown }) {
                     onMouseLeave={handleOnRemove}
                 >
                     {title} <MdArrowDropDown />
-                </li>
-            )}
 
-            {(hasBropdown && showDropdown) && (
-                <Dropdown title={title} />
+                    {(hasBropdown && showDropdown) && (
+                        <Dropdown title={title} />
+                    )}
+                </li>
             )}
         </React.Fragment>
     )

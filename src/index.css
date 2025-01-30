@@ -23,7 +23,7 @@ body {
 .header {
 	height: 8rem;
 	border-bottom: 1.4px solid #f9f9f9;
-	padding: 2rem 4rem;
+	padding: 0 4rem;
 
 	display: flex;
 	align-items: center;
@@ -35,6 +35,7 @@ body {
 .nav--links {
 	display: flex;
 	align-items: center;
+    height: 100%;
 }
 .nav--links {
 	gap: 4.8rem;
@@ -47,6 +48,7 @@ body {
 	gap: 0.68rem;
 	cursor: pointer;
 	transition: all 0.3s;
+    height: 100%;
 }
 .nav--item:hover {
 	color: #01af86;
@@ -89,4 +91,65 @@ body {
 @keyframes animate-down {
     from { transform: translateY(-2rem); opacity: 0; }
     to { transform: translate(0); opacity: 1; }
+}
+
+
+.dropdown--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+.dropdown--item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.48rem;
+    line-height: 1.4;
+    gap: 1.4rem;
+    color: #444;
+    cursor:auto;
+}
+
+.dropdown--item p,
+.dropdown--card p {
+    transition: all 0.3s;
+}
+.dropdown--item p:hover,
+.dropdown--card p:hover {
+    color: #01af86;
+    cursor: pointer;
+}
+
+.dropdown--item h3,
+.dropdown--item p:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1.2rem;
+}
+
+
+.dropdown--card {
+    color: #444;
+    border-radius: .4rem;
+    background-color: #f9f9f9;
+    padding: .8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.dropdown--card img {
+    width: 100%;
+    height: auto;
+    border-radius: .4rem;
+}
+.dropdown--card p {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: .4rem;
+    line-height: 1.3;
+
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: capitalize;
 }
