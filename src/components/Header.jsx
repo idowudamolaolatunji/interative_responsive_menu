@@ -21,7 +21,7 @@ function Header() {
             {/* <h2 className="logo--text">Rentals</h2> */}
 
             <nav className="header__nav">
-                {width > 820 ? (
+                {width > 800 ? (
                     <ul className="nav--links">
                         <NavLink title="Home" isLink={true} />
                         <NavLink title="Buying" hasBropdown={true} />
@@ -41,7 +41,7 @@ function Header() {
             </nav>
 
 
-            {(showMobileMenu && width < 821) && (
+            {(showMobileMenu && width <= 800) && (
                 <Sidebar onClose={handleClose} />
             )}
         </header>
