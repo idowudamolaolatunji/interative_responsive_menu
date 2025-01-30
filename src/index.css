@@ -259,7 +259,10 @@ body {
         font-size: 1.48rem;
 	    gap: 0.28rem;
     }
-    
+    .dropdown--box {
+        padding: 2.8rem;
+    }
+
 }
 
 
