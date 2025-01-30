@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Dropdown() {
+function Dropdown({ title }) {
   return (
-    <div>
-      Dropdown
+    <div className="dropdown--box">
+        <div className="dropdown--drid">
+            
+        </div>
     </div>
   )
 }
