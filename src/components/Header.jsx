@@ -18,7 +18,7 @@ function Header() {
 
     return (
         <header className="header">
-            <h2 className="logo--text">Rentals</h2>
+            {/* <h2 className="logo--text">Rentals</h2> */}
 
             <nav className="header__nav">
                 {width > 820 ? (
