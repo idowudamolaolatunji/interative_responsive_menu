@@ -1,9 +1,15 @@
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
 
+import img from "../assets/kids-with-balloons.jpg"
+import { useWindowSize } from 'react-use'
+
 function Dropdown({ title }) {
+    const { width } = useWindowSize();
+
+
   return (
-    <div className="dropdown--box">
+    <div className={width > 820 ? "dropdown--box" : ""}>
         <div className="dropdown--grid">
 
             <div className="dropdown--item">
@@ -32,7 +38,7 @@ function Dropdown({ title }) {
             </div>
 
             <div className="dropdown--card">
-                <img src="https://www.outofhours-kidsclub.com/wp-content/uploads/2017/07/kids-with-balloons.jpg" alt="img" />
+                <img src={img} alt="img" />
                 <p>view All Avaliable {title} <MdArrowOutward /> </p>
             </div>
 
